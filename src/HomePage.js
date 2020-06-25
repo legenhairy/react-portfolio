@@ -7,8 +7,8 @@ function HomePage(props) {
   
   //include the social media icons in nav or below the two columns
   return (
-    <div className="bg">
-      <section class="hero is-fullheight"> 
+    <div>
+      <section class="hero is-fullheight bg"> 
         <div class="hero-head">
           <nav class="navbar">
             <div class="container is-fluid">
@@ -47,9 +47,9 @@ function HomePage(props) {
               </p>
             {/*this row of buttons should be centered in the column on its own line/div**/}
               <div class="buttons is-centered">
-                <button class="button is-primary">Github</button>
-                <button class="button is-info">Resume</button>
-                <button class="button is-danger">LinkedIn</button>
+                <a class="button is-primary" href="https://github.com/legenhairy">Github</a>
+                <a class="button is-info" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">Resume</a>
+                <a class="button is-danger" href="https://www.linkedin.com/in/harry-zhangsfsu/">LinkedIn</a>
               </div>
             </div>  
 
@@ -74,6 +74,7 @@ function HomePage(props) {
 
         
       </section>
+      <Projects />
     </div>
   );
 }
