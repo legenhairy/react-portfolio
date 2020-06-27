@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from 'avataaars';
 import Projects from './Projects';
+import { FaGithub, FaGoogleDrive, FaLinkedin } from 'react-icons/fa';
 import './HomePage.css'; 
 
 function HomePage(props) {
@@ -22,10 +23,7 @@ function HomePage(props) {
                   <a className="navbar-item">
                     Home
                   </a>
-                  <a className="navbar-item">
-                    About
-                  </a>
-                  <a className="navbar-item">
+                  <a className="navbar-item" href="#proj-section">
                     Projects 
                   </a>
                 </div>
@@ -47,9 +45,15 @@ function HomePage(props) {
               </p>
             {/*this row of buttons should be centered in the column on its own line/div**/}
               <div class="buttons is-centered">
-                <a class="button is-primary" href="https://github.com/legenhairy">Github</a>
-                <a class="button is-info" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">Resume</a>
-                <a class="button is-danger" href="https://www.linkedin.com/in/harry-zhangsfsu/">LinkedIn</a>
+                <a class="button is-primary" href="https://github.com/legenhairy">
+                  <FaGithub />
+                </a>
+                <a class="button is-danger" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
+                  <FaGoogleDrive />
+                </a>
+                <a class="button is-info" href="https://www.linkedin.com/in/harry-zhangsfsu/">
+                  <FaLinkedin />
+                </a>
               </div>
             </div>  
 
@@ -71,10 +75,15 @@ function HomePage(props) {
           </div>
          </div> 
         </div>
-
-        
       </section>
-      <Projects />
+      <Projects id='proj-section'/>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Website</strong> by <a href="https://jgthms.com">Harry Zhang</a>.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
