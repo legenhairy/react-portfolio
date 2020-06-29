@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from 'avataaars';
 import Projects from './Projects';
-import { FaGithub, FaGoogleDrive, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa';
 import './HomePage.css'; 
 
 function HomePage(props) {
@@ -15,10 +15,10 @@ function HomePage(props) {
             <div class="container is-fluid">
               <div class="navbar-brand">
                 <a class="navbar-item">
-                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                  Harry
                 </a>
               </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-menu">
                 <div class="navbar-end">
                   <a className="navbar-item">
                     Home
@@ -44,8 +44,8 @@ function HomePage(props) {
                 
               </p>
             {/*this row of buttons should be centered in the column on its own line/div**/}
-              <div class="buttons is-centered">
-                <a class="button is-primary" href="https://github.com/legenhairy">
+              <div class="buttons is-centered are-medium">
+                <a class="button is-black" href="https://github.com/legenhairy">
                   <FaGithub />
                 </a>
                 <a class="button is-danger" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
@@ -74,6 +74,13 @@ function HomePage(props) {
             </div>   
           </div>
          </div> 
+        </div>
+
+      {/* hero footer just has a nice visual*/}
+        <div class="hero-foot">
+          <div class="container is-fluid">
+            <FaAngleDoubleDown />
+          </div>
         </div>
       </section>
       <Projects id='proj-section'/>
