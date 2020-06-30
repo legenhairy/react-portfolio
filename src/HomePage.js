@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from 'avataaars';
 import Projects from './Projects';
-import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown } from 'react-icons/fa';
+import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown, FaLaptopCode } from 'react-icons/fa';
 import './HomePage.css'; 
 
 function HomePage(props) {
@@ -15,7 +15,9 @@ function HomePage(props) {
             <div class="container is-fluid">
               <div class="navbar-brand">
                 <a class="navbar-item">
-                  Harry
+                  <span class="icon has-text-info is-medium">  
+                    <FaLaptopCode />
+                  </span>
                 </a>
               </div>
               <div class="navbar-menu">
@@ -43,7 +45,7 @@ function HomePage(props) {
                 Front End Developer
                 
               </p>
-            {/*this row of buttons should be centered in the column on its own line/div**/}
+            {/*this list of buttons should be centered in the column on its own line/div**/}
               <div class="buttons is-centered are-medium">
                 <a class="button is-black" href="https://github.com/legenhairy">
                   <FaGithub />

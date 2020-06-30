@@ -18,9 +18,17 @@ function Projects() { //this will be columns of projects i have worked on
 							<div class="media-content">
 								<div class="content">
 									<h1 class="title is-size-2">Hairy Clothing</h1>
-									<p class="is-size-5">
-										React, Redux, Firebase
-									</p>
+									<nav class="level">
+										<div class="level-item">
+											<span class="tag is-link">React</span>
+										</div>	
+										<div class="level-item">
+											<span class="tag is-primary">Redux</span>
+										</div>
+										<div class="level-item">
+											<span class="tag is-danger">Firebase</span>
+										</div>  										
+									</nav>
 									<Avatar
 										avatarStyle='Circle'
 										topType='ShortHairShortFlat'
@@ -42,9 +50,20 @@ function Projects() { //this will be columns of projects i have worked on
 					<div class="column">
 						<div class="notification is-primary">
 							<h1 class="title is-size-2">Face Recognition</h1>
-							<p class="is-size-5">
-								React, Node.js, PostgresSQL, Express
-							</p>
+							<nav class="level">
+								<div class="level-item">
+									<span class="tag is-link">React</span>
+								</div>	
+								<div class="level-item">
+									<span class="tag is-primary">Node.js</span>
+								</div>
+								<div class="level-item">
+									<span class="tag is-danger">PostgresSQL</span>	
+								</div>  	
+								<div class="level-item">
+									<span class="tag is-danger">Express</span>	
+								</div>									
+							</nav>
 							<Avatar
 								avatarStyle='Circle'
 								topType='ShortHairShortFlat'
@@ -63,9 +82,17 @@ function Projects() { //this will be columns of projects i have worked on
 					<div class="column">
 						<div class="notification is-warning">
 							<h1 class="title is-size-2">Entry Dev Polling</h1>
-							<p class="is-size-5">
-								Material UI, React, Node.js, Redis
-							</p>
+							<nav class="level">
+								<div class="level-item">
+									<span class="tag is-link">React</span>
+								</div>	
+								<div class="level-item">
+									<span class="tag is-primary">Node.js</span>
+								</div>
+								<div class="level-item">
+									<span class="tag is-danger">Express</span>	
+								</div>  										
+							</nav>
 							<Avatar
 								avatarStyle='Circle'
 								topType='ShortHairShortFlat'
