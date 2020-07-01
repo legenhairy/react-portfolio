@@ -1,10 +1,10 @@
 import React from "react";
 import Avatar from 'avataaars';
  
-function Projects() { //this will be columns of projects i have worked on
+function Projects({ id }) { //this will be columns of projects i have worked on
   //the level will be a brief visual list of the tech stack icons 
   return (
-    <div>
+    <div id={id}>
 	    <section class="hero is-dark is-bold is-fullheight">
 			<div class="container is-fluid">
 				<h1 class="title is-1">Portfolio</h1>

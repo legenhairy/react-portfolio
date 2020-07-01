@@ -1,7 +1,8 @@
 import React from "react";
 import Avatar from 'avataaars';
-import Projects from './Projects';
+import Projects from './components/Projects';
 import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown, FaLaptopCode } from 'react-icons/fa';
+import { Link, animateScroll as scroll } from "react-scroll";
 import './HomePage.css'; 
 
 function HomePage(props) {
@@ -25,8 +26,17 @@ function HomePage(props) {
                   <a className="navbar-item">
                     Home
                   </a>
-                  <a className="navbar-item" href="#proj-section">
-                    Projects 
+                  <a className="navbar-item">
+                    <Link
+                      activeClass="active"
+                      to="proj-section"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      Projects 
+                    </Link>  
                   </a>
                 </div>
               </div>
@@ -42,15 +52,14 @@ function HomePage(props) {
                 Hi, I'm Harry!
               </p>
               <p class="subtitle is-3 has-text-black">  
-                Front End Developer
-                
+                Front End Engineer
               </p>
             {/*this list of buttons should be centered in the column on its own line/div**/}
               <div class="buttons is-centered are-medium">
                 <a class="button is-black" href="https://github.com/legenhairy">
                   <FaGithub />
                 </a>
-                <a class="button is-danger" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
+                <a class="button is-success" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
                   <FaGoogleDrive />
                 </a>
                 <a class="button is-info" href="https://www.linkedin.com/in/harry-zhangsfsu/">
@@ -81,7 +90,18 @@ function HomePage(props) {
       {/* hero footer just has a nice visual*/}
         <div class="hero-foot">
           <div class="container is-fluid">
-            <FaAngleDoubleDown />
+            <button class="button is-info is-light">
+              <Link
+                activeClass="active"
+                to="proj-section"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                >
+                 See More 
+              </Link>
+            </button>
           </div>
         </div>
       </section>
