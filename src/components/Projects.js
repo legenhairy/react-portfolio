@@ -1,6 +1,6 @@
 import React from "react";
-import Avatar from 'avataaars';
- 
+import { FaGithub } from 'react-icons/fa';
+
 function Projects({ id }) { //this will be columns of projects i have worked on
   //the level will be a brief visual list of the tech stack icons 
   return (
@@ -33,9 +33,19 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 											<img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt='nice clothes' />
 										</figure>
 									</div>
+
 								</div>
 							</div>
 						</article>
+						<div className="container">
+							<nav className="level">
+								<div className="level-item has-text-centered">
+									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy">
+										<FaGithub />
+									</a>
+								</div>
+							</nav>
+						</div>
 					</div>
 
 					<div className="column">
@@ -61,37 +71,46 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 								</figure>
 							</div>
 						</div>
+						
+						<div className="container">
+							<nav className="level">
+								<div className="level-item has-text-centered">
+									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy">
+										<FaGithub />
+									</a>
+								</div>
+							</nav>
+						</div>
+						
 					</div>
 					<div className="column">
 						<div className="notification is-warning">
-							<h1 className="title is-size-2">Entry Dev Polling</h1>
+							<h1 className="title is-size-2">GatorList</h1>
 							<nav className="level">
 								<div className="level-item">
-									<span className="tag is-link">React</span>
+									<span className="tag is-link">EJS(templates)</span>
 								</div>	
 								<div className="level-item">
 									<span className="tag is-primary">Node.js</span>
 								</div>
 								<div className="level-item">
 									<span className="tag is-danger">Express</span>	
-								</div>
-								<div className="level-item">
-									<span className="tag is-danger">Redis</span>	
-								</div>  	  										
+								</div>									
 							</nav>
-							<Avatar
-								avatarStyle='Circle'
-								topType='ShortHairShortFlat'
-								accessoriesType='Prescription02'
-								hairColor='Black'
-								facialHairType='Blank'
-								clotheType='Hoodie'
-								clotheColor='Black'
-								eyeType='Happy'
-								eyebrowType='Default'
-								mouthType='Smile'
-								skinColor='Light'
-							/>
+							<div className="container">
+								<figure className="image is-4by3">
+									<img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt='nice clothes' />
+								</figure>
+							</div>
+						</div>
+						<div className="container">
+							<nav className="level">
+								<div className="level-item has-text-centered">
+									<a className="button is-info is-large is-fullwidth" href="https://github.com/CSC-648-SFSU/csc648-fa18-Team12">
+										<FaGithub />
+									</a>
+								</div>
+							</nav>
 						</div>
 					</div>
 				</div>

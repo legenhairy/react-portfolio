@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from 'avataaars';
 import Projects from './components/Projects';
 import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown, FaLaptopCode } from 'react-icons/fa';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import './HomePage.css'; 
 
 function HomePage() {
