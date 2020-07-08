@@ -5,24 +5,24 @@ import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown, FaLaptopCode } 
 import { Link, animateScroll as scroll } from "react-scroll";
 import './HomePage.css'; 
 
-function HomePage(props) {
+function HomePage() {
   
   //include the social media icons in nav or below the two columns
   return (
     <div>
-      <section class="hero is-fullheight bg"> 
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="container is-fluid">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  <span class="icon has-text-info is-medium">  
+      <section className="hero is-fullheight bg"> 
+        <div className="hero-head">
+          <nav className="navbar">
+            <div className="container is-fluid">
+              <div className="navbar-brand">
+                <a className="navbar-item">
+                  <span className="icon has-text-info is-medium">  
                     <FaLaptopCode />
                   </span>
                 </a>
               </div>
-              <div class="navbar-menu">
-                <div class="navbar-end">
+              <div className="navbar-menu">
+                <div className="navbar-end">
                   <a className="navbar-item">
                     Home
                   </a>
@@ -44,25 +44,25 @@ function HomePage(props) {
           </nav>
         </div>
 
-        <div class="hero-body"> 
-         <div class="container is-fluid">
-          <div class="columns is-vcentered">
-            <div class="column">
-              <p class="title is-1 has-text-black">
+        <div className="hero-body"> 
+         <div className="container is-fluid">
+          <div className="columns is-vcentered">
+            <div className="column">
+              <p className="title is-1 has-text-black">
                 Hi, I'm Harry!
               </p>
-              <p class="subtitle is-3 has-text-black">  
+              <p className="subtitle is-3 has-text-black">  
                 Front End Engineer
               </p>
             {/*this list of buttons should be centered in the column on its own line/div**/}
-              <div class="buttons is-centered are-medium">
-                <a class="button is-black" href="https://github.com/legenhairy">
+              <div className="buttons is-centered are-medium">
+                <a className="button is-black" href="https://github.com/legenhairy">
                   <FaGithub />
                 </a>
-                <a class="button is-success" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
+                <a className="button is-success" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
                   <FaGoogleDrive />
                 </a>
-                <a class="button is-info" href="https://www.linkedin.com/in/harry-zhangsfsu/">
+                <a className="button is-info" href="https://www.linkedin.com/in/harry-zhangsfsu/">
                   <FaLinkedin />
                 </a>
               </div>
@@ -88,9 +88,8 @@ function HomePage(props) {
         </div>
 
       {/* hero footer just has a nice visual*/}
-        <div class="hero-foot">
-          <div class="container is-fluid">
-            <button class="button is-info is-light">
+        <div className="hero-foot">
+          <div className="container is-fluid">
               <Link
                 activeClass="active"
                 to="proj-section"
@@ -99,9 +98,8 @@ function HomePage(props) {
                 offset={-70}
                 duration={500}
                 >
-                 See More 
+                 <FaAngleDoubleDown />
               </Link>
-            </button>
           </div>
         </div>
       </section>
