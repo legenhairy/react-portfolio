@@ -40,7 +40,7 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 						<div className="container">
 							<nav className="level">
 								<div className="level-item has-text-centered">
-									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy">
+									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy/hairy-clothing">
 										<FaGithub />
 									</a>
 								</div>
@@ -75,7 +75,7 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 						<div className="container">
 							<nav className="level">
 								<div className="level-item has-text-centered">
-									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy">
+									<a className="button is-info is-large is-fullwidth" href="https://github.com/legenhairy/front-face">
 										<FaGithub />
 									</a>
 								</div>

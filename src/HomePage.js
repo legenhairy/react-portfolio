@@ -68,7 +68,7 @@ function HomePage() {
               </div>
             </div>  
 
-            <div class="column">
+            <div className="column">
               <Avatar
                 avatarStyle='Circle'
                 topType='ShortHairShortFlat'
@@ -104,8 +104,8 @@ function HomePage() {
         </div>
       </section>
       <Projects id='proj-section'/>
-      <footer class="footer">
-        <div class="content has-text-centered">
+      <footer className="footer">
+        <div className="content has-text-centered">
           <p>
             <strong>Website</strong> by <a href="https://jgthms.com">Harry Zhang</a>.
           </p>
