@@ -6,8 +6,8 @@ function Projects({ id }) { //this will be columns of projects i have worked on
   return (
         <section className="hero is-dark is-bold is-fullheight">
 			<div className="container is-fluid" >
-				<h1 className="title is-1" id={id}>Portfolio</h1>
-				<h1 className="title is-3">Latest Work</h1>
+				<h1 className="title is-1">Portfolio</h1>
+				<h1 className="title is-3" id={id}>Latest Work</h1>
 			</div>
 			<div className="hero-body">
 			  <div className="container is-fluid">
@@ -19,13 +19,13 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 									<h1 className="title is-size-2">Hairy Clothing</h1>
 									<nav className="level">
 										<div className="level-item">
-											<span className="tag is-link">React</span>
+											<span className="tag is-link is-medium">React</span>
 										</div>	
 										<div className="level-item">
-											<span className="tag is-primary">Redux</span>
+											<span className="tag is-primary is-medium">Redux</span>
 										</div>
 										<div className="level-item">
-											<span className="tag is-danger">Firebase</span>
+											<span className="tag is-danger is-medium">Firebase</span>
 										</div>  										
 									</nav>
 									<div className="container">
@@ -53,20 +53,20 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 							<h1 className="title is-size-2">Face Recognition</h1>
 							<nav className="level">
 								<div className="level-item">
-									<span className="tag is-link">React</span>
+									<span className="tag is-link is-medium">React</span>
 								</div>	
 								<div className="level-item">
-									<span className="tag is-primary">Node.js</span>
+									<span className="tag is-primary is-medium">Node.js</span>
 								</div>
 								<div className="level-item">
-									<span className="tag is-danger">PostgresSQL</span>	
+									<span className="tag is-danger is-medium">PostgresSQL</span>	
 								</div>  	
 								<div className="level-item">
-									<span className="tag is-danger">Express</span>	
+									<span className="tag is-danger is-medium">Express</span>	
 								</div>									
 							</nav>
 							<div className="container">
-								<figure className="image is-5by3">
+								<figure className="image is-4by3">
 									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0Tjve8zohIluKSyAV3aqQzgjznr8pJFhOeg&usqp=CAU" alt='face app' />
 								</figure>
 							</div>
@@ -88,13 +88,13 @@ function Projects({ id }) { //this will be columns of projects i have worked on
 							<h1 className="title is-size-2">GatorList</h1>
 							<nav className="level">
 								<div className="level-item">
-									<span className="tag is-link">EJS(templates)</span>
+									<span className="tag is-link is-medium">EJS(templates)</span>
 								</div>	
 								<div className="level-item">
-									<span className="tag is-primary">Node.js</span>
+									<span className="tag is-primary is-medium">Node.js</span>
 								</div>
 								<div className="level-item">
-									<span className="tag is-danger">Express</span>	
+									<span className="tag is-danger is-medium">Express</span>	
 								</div>									
 							</nav>
 							<div className="container">

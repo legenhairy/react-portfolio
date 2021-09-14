@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from 'avataaars';
 import Projects from './components/Projects';
+import About from './components/About';
 import { FaGithub, FaGoogleDrive, FaLinkedin, FaAngleDoubleDown, FaLaptopCode } from 'react-icons/fa';
 import { Link } from "react-scroll";
 import './HomePage.css'; 
@@ -24,7 +25,16 @@ function HomePage() {
               <div className="navbar-menu">
                 <div className="navbar-end">
                   <a className="navbar-item">
-                    Home
+                    <Link
+                      activeClass="active"
+                      to="about-section"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      About
+                    </Link>  
                   </a>
                   <a className="navbar-item">
                     <Link
@@ -33,7 +43,7 @@ function HomePage() {
                       spy={true}
                       smooth={true}
                       offset={-70}
-                      duration={500}
+                      duration={450}
                     >
                       Projects 
                     </Link>  
@@ -51,7 +61,7 @@ function HomePage() {
               <p className="title is-1 has-text-black">
                 Hi, I'm Harry!
               </p>
-              <p className="subtitle is-3 has-text-black">  
+              <p className="subtitle is-2 has-text-black">  
                 Front End Engineer
               </p>
             {/*this list of buttons should be centered in the column on its own line/div**/}
@@ -59,7 +69,7 @@ function HomePage() {
                 <a className="button is-black" href="https://github.com/legenhairy">
                   <FaGithub />
                 </a>
-                <a className="button is-success" href="https://drive.google.com/file/d/1Et2cBZMcgGYz0AH6TocHxAz7n7XVZyex/view?usp=sharing">
+                <a className="button is-success" href="https://docs.google.com/document/d/1qTxobC4dew3ZRcL3LyU2Qp9Rgy_m0hKKIpLWBUUDYPE/edit">
                   <FaGoogleDrive />
                 </a>
                 <a className="button is-info" href="https://www.linkedin.com/in/harry-zhangsfsu/">
@@ -92,7 +102,7 @@ function HomePage() {
           <div className="container is-fluid">
               <Link
                 activeClass="active"
-                to="proj-section"
+                to="about-section"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -103,14 +113,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+      <About id='about-section' />
       <Projects id='proj-section'/>
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
-            <strong>Website</strong> by <a href="https://jgthms.com">Harry Zhang</a>.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
